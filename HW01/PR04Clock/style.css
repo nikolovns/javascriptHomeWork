@@ -1,0 +1,8 @@
+#my-clock {
+    display: block;
+    border: 1px solid #aaa;
+    font-size: 20px;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+}

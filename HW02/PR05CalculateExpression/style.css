@@ -1,0 +1,23 @@
+.container {
+    width: 300px;
+}
+input, p {
+    width: 100%;
+    background-color: #aaa;
+    color: #eee;
+    margin: 10px 0;
+    border: none;
+    border: 1px solid #000;
+    padding: 5px;
+    display: inline-block;
+    height: 20px;
+}
+input[type="button"] {
+    width: auto;
+    padding: 10px;
+    height: auto;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}

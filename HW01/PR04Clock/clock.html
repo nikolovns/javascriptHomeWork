@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    
+    <script type="text/javascript">
+        function clockTime() {
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var seconds = currentTime.getSeconds();
+            document.getElementById("my-clock").innerHTML = 
+                hours + ":" + minutes + ":" + seconds;
+        }
+        
+        setInterval('clockTime()', 1000);
+    </script>
+    
+<!--    <input type="text" id="my-clock">-->
+    
+    <span id="my-clock"></span>
+</body>
+
+</html>
