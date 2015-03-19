@@ -4,16 +4,10 @@ all the tags <a href="…">…</a> with corresponding tags
 Write JS program aTagReplacer.js that invokes your function with the sample input data below
 and prints the output at the console.*/
 
-
 function replaceATag(str) {
-
-    var replaceA = str.replace('<a', '[URL');
-    var positionURL = replaceA.indexOf('[');
-    var positionAfterURL = replaceA.indexOf('>', positionURL);
-    replaceA = replaceA.substr(0, positionAfterURL) + ']' + replaceA.substr(positionAfterURL + 1);
-    replaceA = replaceA.replace('</a>', '[/URL]');
-
-    console.log(replaceA);
+    var newStr = /(<a.*? href)=(\'|\"|)(.*?)\2>([^<]+)(<\/a>)/g;
+    var replaceUrl = str.replace(newStr, '[URL =$3]$4[/URL]');
+    console.log(replaceUrl);
 }
 
-replaceATag('<ul> <li> <a href=http://softuni.bg>SoftUni</a> </li> </ul>');
+replaceATag('<ul><li><a href=http://softuni.bg>SoftUni</a></li></ul>');
