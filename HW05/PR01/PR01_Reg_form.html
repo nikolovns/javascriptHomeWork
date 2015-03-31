@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<form action="" class="form">
+    <h1>Регистрация за уебинар</h1>
+    <label for="name">Име и Фамилия:</label>
+    <input type="text" name="name" id="name" required=""/>
+    <label for="address">Адрес:</label>
+    <input type="text" name="address" id="address"/>
+    <label for="city">Населено място:</label>
+    <input type="text" name="city" id="city"/>
+    <label for="post">Пощенски код</label>
+    <input type="text" name="post" id="post"/>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required=""/>
+    <label for="tell">Телефон</label>
+    <input type="text" name="tell" id="tell"/>
+    <label for="date">Дата на семинара</label>
+    <input type="date" name="date" id="date"/>
+    <input type="checkbox" name="check" id="ch" onclick="checkForm()"/>
+    <label for="ch">Желая фактура</label>
+
+    <div id="hidden">
+        <lable for="firm">Фирма/Организация</lable>
+        <input type="text" name="firm" id="firm"/>
+        <lable for="mol">МОЛ</lable>
+        <input type="text" name="mol" id="mol" required=""/>
+        <lable for="eik">ЕИК</lable>
+        <input type="text" name="eik" id="eik" required=""/>
+        <lable for="dds">ИН по ДДС</lable>
+        <input type="text" name="dds" id="dds" required=""/>
+        <lable for="firm-address">Адрес</lable>
+        <input type="text" name="firm-address" id="firm-address" required=""/>
+    </div>
+    <input type="submit" value="Регистрирай се"/>
+    <input type="reset" value="Изчисти"/>
+</form>
+<script src="hide.js" ></script>
+</body>
+</html>

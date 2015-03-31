@@ -1,0 +1,24 @@
+.form {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid blue;
+}
+.form h1 {
+    font-size: 1.1em;
+}
+
+.form input {
+    width: 90%;
+}
+
+.form input[type='checkbox'] {
+    width: auto;
+}
+
+.form #hidden {
+    visibility: hidden;
+}
+
+.form input[type='reset'], .form input[type="submit"] {
+    width: auto;
+}

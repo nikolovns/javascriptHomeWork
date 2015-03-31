@@ -1,0 +1,28 @@
+#form {
+    width: 250px;
+    border: 1px solid #cccccc;
+}
+
+#form input {
+    width: 90%;
+    text-align: center;
+    display: block;
+    border: none;
+    border: 1px solid #cccccc;
+    padding: 5px;
+    margin: 10px auto;
+}
+
+#form input[type = 'button'] {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#form #is-email {
+    width: 90%;
+    margin: 10px auto;
+    padding: 5px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
